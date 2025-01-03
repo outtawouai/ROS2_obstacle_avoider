@@ -14,17 +14,23 @@
 
 Tested with Ubuntu 22.04, Python 3.10, Gazebo11, ROS2 Humble
 
-### Installation
+### Installation with Docker container (recommended)
 
 0. Open terminal, get into current directory
 1. Build docker image with `sudo docker buildx build -t turtlebot3_medium .`
 2. Run interactive container with `bash run_docker.sh`
 3. Check that GUI can be passed with `bash forward_x11.sh`. xeyes should be displayed on main screen (if not, check that the `.Xauthority` file is in `/home/.Xauthority`. If it's not, either move it there or change path in `forward_x11.sh` and `obstacle_avoidance/launch_simulation.sh`)
 
-### Launching the simulation with interactive container
+### Launching the simulation with the Docker container
 
 1. Run interactive container with `bash run_docker.sh`
 2. Launch simuation using `bash obstacle_avoidance/launch_simulation.sh`
+
+### Running the node separately
+
+0. Run your Gazebo world and spawn the Turtlebot3 Burger, for example with `ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py`
+1. cd into `obstacle_avoidance`, then build the ROS2 package with `colcon build`
+2. Run node with `ros2 run obstacle_avoidance obstacle_avoider`
 
 ### Sources
 
