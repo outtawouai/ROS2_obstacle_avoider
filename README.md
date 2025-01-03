@@ -16,10 +16,10 @@ Tested with Ubuntu 22.04, Python 3.10, Gazebo11, ROS2 Humble
 
 ### Installation with Docker container (recommended)
 
-0. Open terminal, get into current directory
+0. Open terminal, get into this repo
 1. Build docker image with `sudo docker buildx build -t turtlebot3_medium .`
 2. Run interactive container with `bash run_docker.sh`
-3. Check that GUI can be passed with `bash forward_x11.sh`. xeyes should be displayed on main screen (if not, check that the `.Xauthority` file is in `/home/.Xauthority`. If it's not, either move it there or change path in `forward_x11.sh` and `obstacle_avoidance/launch_simulation.sh`)
+3. Check that GUI can be passed with `bash forward_x11.sh`. xeyes should be displayed on main screen (if not, check that the `.Xauthority` file is in `/home/.Xauthority` outside the container. If it isn't, either move it there or change its path in `run_docker.sh`)
 
 ### Launching the simulation with the Docker container
 
