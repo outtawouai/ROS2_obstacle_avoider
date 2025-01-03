@@ -1,4 +1,6 @@
-(ROS2) Simple control program that connects with Turtlebot3 in Gazebo and keeps it moving without colliding with obstacles in the standard World.
+![](https://github.com/outtawouai/ROS2_obstacle_avoider/gif.gif)
+
+Simple control program that connects with Turtlebot3 in Gazebo and keeps it moving without colliding with obstacles in the standard World.
 
 ### Requirements
 
