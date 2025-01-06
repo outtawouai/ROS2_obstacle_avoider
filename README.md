@@ -39,3 +39,10 @@ Tested with Ubuntu 22.04, Python 3.10, Gazebo11, ROS2 Humble
 Environment : https://medium.com/@nilutpolkashyap/setting-up-turtlebot3-simulation-in-ros-2-humble-hawksbill-70a6fcdaf5de
 
 ROS2 Dockefile : https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00be9ba01c1b7a6823c9472/ros/humble/ubuntu/jammy/desktop/Dockerfile
+
+### Possible improvements
+
+- The robot struggles to find its way out of corners
+- The robot sometimes forces its way if it sees a corridor so small that it can't even pass through
+
+Might be fixed if we consider a range of points instead of just 3 to write the navigation node. 
