@@ -42,7 +42,7 @@ ROS2 Dockefile : https://github.com/osrf/docker_images/blob/20e3ba685bb353a3c00b
 
 ### Possible improvements
 
-- The robot struggles to find its way out of corners
-- The robot sometimes forces its way if it sees a corridor so small that it can't even pass through
+- Corners and concave walls can lead to problems, sometimes gets stuck and needs to turn back
+- The robot sometimes forces its way if it sees a small corridor, even if it can't even pass through
 
 Might be fixed if we consider a range of points instead of just 3 to write the navigation node. 
